@@ -12,6 +12,18 @@ fi
 echo "Make symbolic link for .zshrc"
 ln -s `pwd`/.zshrc ~/
 
+# vim
+if [ -f ~/.vimrc ]; then
+	echo "Remove old .vimrc"
+	rm ~/.vimrc
+elif [ -L ~/.vimrc ]; then
+	echo "Unlink old .vimrc"
+	unlink ~/.vimrc
+fi
+
+echo "Make symbolic link for .vimrc"
+ln -s `pwd`/.vimrc ~/
+
 # tmux
 if [ -f ~/.tmux.conf ]; then
 	echo "Remove old .tmux.conf"

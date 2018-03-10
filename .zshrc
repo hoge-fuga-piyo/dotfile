@@ -19,3 +19,4 @@ RPROMPT=$RPROMPT'${vcs_info_msg_0_}'
 
 # エイリアスの設定
 alias ls='ls --color=auto'
+alias ll='ls -l'
