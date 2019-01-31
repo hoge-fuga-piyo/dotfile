@@ -47,3 +47,8 @@ set wrapscan
 set hlsearch
 " ESC連打でハイライト解除
 nmap <Esc><Esc> :nohlsearch<CR><Esc>
+
+" 関数折り畳み
+set foldmethod=indent
+set foldlevel=10
+set foldcolumn=3
